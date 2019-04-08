@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/SPManager.ico</file>
+        <file>resource/Skin/psblack.qss</file>
+        <file>resource/Skin/psblack/add_bottom.png</file>
+        <file>resource/Skin/psblack/add_left.png</file>
+        <file>resource/Skin/psblack/add_right.png</file>
+        <file>resource/Skin/psblack/add_top.png</file>
+        <file>resource/Skin/psblack/branch_close.png</file>
+        <file>resource/Skin/psblack/branch_open.png</file>
+        <file>resource/Skin/psblack/calendar_nextmonth.png</file>
+        <file>resource/Skin/psblack/calendar_prevmonth.png</file>
+        <file>resource/Skin/psblack/checkbox_checked.png</file>
+        <file>resource/Skin/psblack/checkbox_checked_disable.png</file>
+        <file>resource/Skin/psblack/checkbox_parcial.png</file>
+        <file>resource/Skin/psblack/checkbox_parcial_disable.png</file>
+        <file>resource/Skin/psblack/checkbox_unchecked.png</file>
+        <file>resource/Skin/psblack/checkbox_unchecked_disable.png</file>
+        <file>resource/Skin/psblack/radiobutton_checked.png</file>
+        <file>resource/Skin/psblack/radiobutton_checked_disable.png</file>
+        <file>resource/Skin/psblack/radiobutton_unchecked.png</file>
+        <file>resource/Skin/psblack/radiobutton_unchecked_disable.png</file>
+        <file>resource/menu/close.png</file>
+        <file>resource/menu/menu.png</file>
+        <file>resource/menu/min.png</file>
+        <file>resource/menu/skin.png</file>
+    </qresource>
+</RCC>
