@@ -26,6 +26,8 @@ _In_ PUNICODE_STRING RegistryPath
 	do
 	{
 
+		KdBreakPoint();
+
 //#ifndef DBG
 	//	DriverObject->DriverUnload = NULL;
 //#else
@@ -153,11 +155,6 @@ VOID ProcessFirewallCallBackEx(PEPROCESS  EProcess, HANDLE  ProcessId, PPS_CREAT
 		LPPROC_MONITOR_ITEM pProcMonitorItem = FindProcessMonitorItemByProcessName(&uProcessName);
 		if (NULL != pProcMonitorItem)
 		{
-			//设置事件为有信号，通知应用层
-			//RtlZeroMemory(&g_ProcInsertItem, sizeof(PROC_INSERT_ITEM));
-			//g_ProcInsertItem.nType = IOCT_PROCESS_CREATE;
-			//RtlCopyMemory(&g_ProcInsertItem.ImageName, &pProcMonitorItem->InsertItem.ImageName, wcslen(pProcMonitorItem->InsertItem.ImageName) * sizeof(WCHAR));
-			//KeSetEvent(g_EventObject, 0, FALSE);
 			CreateInfo->CreationStatus = STATUS_ACCESS_DISABLED_NO_SAFER_UI_BY_POLICY;
 		}
 		RtlFreeUnicodeString(&uProcessName);
@@ -225,7 +222,6 @@ Dispatc(
 			default:
 				break;
 			}
-			break;
 		}
 		default:
 			Irp->IoStatus.Information = 0;

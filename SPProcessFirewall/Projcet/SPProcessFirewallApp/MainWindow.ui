@@ -22,6 +22,9 @@
     <height>492</height>
    </size>
   </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
   <property name="dockOptions">
    <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
   </property>
@@ -76,8 +79,11 @@
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="Body">
+     <layout class="QVBoxLayout" name="Body" stretch="0">
       <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
        <number>0</number>
       </property>
       <item>
